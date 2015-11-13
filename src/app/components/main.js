@@ -1,20 +1,20 @@
 import riot from 'riot';
 import componentFactory from '../component-factory';
 
-import accountStatus from './account-status';
-import mall from './mall';
-import login from './login';
+import topsection from './top-section';
 
 componentFactory.createComponent('main', `
 
-<account-status></account-status>
-<mall if={stores.main.state=='mall'}></mall>
-<login if={stores.main.state=='login'}></login>
+    <top-section></top-section>
+
+
+
+
 
 <style>
     main {
         display: block;
-        background-color: pink;
+
     }
 </style>
  
